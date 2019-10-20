@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fixed Asset and Inventory</title>
+  
+  
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="container d-flex">
+      <a class="logo">
+        <img src="logo1.png" style="width:50%;"">
+      </a>
+      <ul class="menu d-flex tab-title">
+        <li>
+          <a href="#dashboard">Dashboard</a>
+        </li>
+        <li>
+          <a href="#orders">Features</a>
+        </li>
+        <li>
+          <a href="#product">Zhvleresimi</a>
+        </li>
+        <li>
+          <a href="#product">Raportet</a>
+        </li>
+      </ul>
+      <div class="dropdown user">
+        <button class="btn dropdown-toggle custom-btn d-flex" type="button" id="userMenu" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <div class="photo d-flex">
+            <img src="https://images2.imgbox.com/61/7d/UskGXtvx_o.jpg">
+          </div>
+          <div class="name d-flex">Admin</div>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="userMenu">
+          <a class="dropdown-item" href="javascript:;">My Profile</a>
+          <a class="dropdown-item" href="javascript:;">Another action</a>
+          <a class="dropdown-item" href="javascript:;">Log Out</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="main">
+    <div class="container">
+      <div id="dashboard" class="tab-inner">
+        <div class="info-wrapper">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="javascript:;">
+                  <i class="fas fa-home"></i>Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+            </ol>
+          </nav>
+          <div class="info-panel d-flex">
+            <h4 class="title">Overview</h4>
+          </div>
+        </div>
+        <div class="block-3 d-flex">
+          <div class="panel d-flex">
+            <div class="icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <div class="content">
+              <p>Total Revenue</p>
+              <span class="num green">
+                <span>$</span>54,540</span>
+            </div>
+          </div>
+          <div class="panel d-flex">
+            <div class="icon">
+              <i class="fas fa-boxes"></i>
+            </div>
+            <div class="content">
+              <p>Total Cost</p>
+              <span class="num red">
+                <span>$</span>12,660</span>
+            </div>
+          </div>
+          <div class="panel d-flex">
+            <div class="icon">
+              <i class="fas fa-money-bill"></i>
+            </div>
+            <div class="content">
+              <p>Net Income</p>
+              <span class="num blue">
+                <span>$</span>41,880</span>
+            </div>
+          </div>
+        </div>
+        <div class="block-1">
+          <div class="panel">
+            <h4 class="title">Activity</h4>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+        <div class="block-2 d-flex">
+          
+          <div class="panel right">
+            <h4 class="title">produktet e regjistruara se fundmi</h4>
+            <ul class="list d-flex">
+              <li class="item d-flex">
+                
+                <div class="detail d-flex">
+                  <p>Laptop HP</p>
+                  <span class="date">
+                    <i class="fas fa-clock"></i>2018/06/13 13:42
+                  </span>
+                  <span class="people">
+                    <i class="fas fa-male"></i>Sasia: 20
+                  </span>
+                </div>
+                <div class="total">
+                  <div class="num">
+                    <span>$</span>3,200</div>
+                </div>
+              </li>
+              <li class="item d-flex">
+                
+                <div class="detail d-flex">
+                  <p>Tavolina Salle</p>
+                  <span class="date">
+                    <i class="fas fa-clock"></i>2018/06/13 10:45
+                  </span>
+                  <span class="people">
+                    <i class="fas fa-male"></i>Sasia: 54
+                  </span>
+                </div>
+                <div class="total">
+                  <div class="num">
+                    <span>$</span>2,800</div>
+                </div>
+              </li>
+              <li class="item d-flex">
+                
+                <div class="detail d-flex">
+                  <p>kOrrika</p>
+                  <span class="date">
+                    <i class="fas fa-clock"></i>2018/06/13 08:26
+                  </span>
+                  <span class="people">
+                    <i class="fas fa-male"></i>Sasia: 10
+                  </span>
+                </div>
+                <div class="total">
+                  <div class="num">
+                    <span>$</span>1,600</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- orders -->
+      <div id="orders" class="tab-inner">
+        <div class="info-wrapper">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="javascript:;">
+                  <i class="fas fa-home"></i>Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">Features</li>
+            </ol>
+          </nav>
+          <div class="info-panel d-flex">
+            <h4 class="title">Funksionet</h4>
+          </div>
+        </div>
+       
+              <!-- /#right-panel -->
+      <aside id="right-panel" class="right-panel" style="margin: 0 15%;">
+      <div class="row" style="margin-bottom: 50px;">
+            <!-- Produkti -->
+                      <div class="module">
+                        <input type="button" class="modules hvr-grow-shadow" onclick="location.href='produkti.html';" value="Produkti" />
+                      </div>
+
+                      <!-- Punetori -->
+                      <div class="module">
+                        <input type="button" class="modules hvr-grow-shadow" onclick="location.href='punetori.html';" value="Punetori" />
+                      </div>
+
+                      <!-- Objekti -->
+                      <div class="module">
+                        <input type="button" class="modules hvr-grow-shadow" onclick="location.href='objekti.html';" value="Objekti" />
+                      </div>
+      </div>
+
+      <div class="row" style="margin-bottom: 50px;">
+            <!-- ProduktiPunetori -->
+                      <div class="module">
+                        <input type="button" class="modules hvr-grow-shadow" onclick="location.href='ProduktiPunetori.html';" value="ProduktiPunetori" />
+                      </div>
+
+                      <!-- Vendori -->
+                      <div class="module">
+                        <input type="button" class="modules hvr-grow-shadow" onclick="location.href='vendori.html';" value="Vendori" />
+                      </div>
+
+                      <!-- Hapesira -->
+                      <div class="module">
+                        <input type="button" class="modules hvr-grow-shadow" onclick="location.href='hapesira.html';" value="Hapesira" />
+                      </div>
+      </div>
+
+      <div class="row" style="margin-bottom: 50px;">
+           <!-- ProduktiHapesira -->
+                      <div class="module">
+                        <input type="button" class="modules hvr-grow-shadow" onclick="location.href='produktihapesira.html';" value="ProduktiHapesira" />
+                      </div>
+
+
+                      <!-- Klienti -->
+                      <div class="module">
+                        <input type="button" class="modules hvr-grow-shadow" onclick="location.href='klienti.html';" value="Klienti" />
+                      </div>
+
+                      <!-- Mirembajtja Teknike -->
+                      <div class="module">
+                        <input type="button" class="modules hvr-grow-shadow" onclick="location.href='mirembajtja.html';" value="MirembajtjaT" />
+                      </div> 
+      </div>
+                    
+
+      
+
+      <div class="row" style="margin-bottom: 50px;">
+            
+      </div>
+  </aside>
+
+
+  <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
